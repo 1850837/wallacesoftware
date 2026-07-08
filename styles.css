@@ -48,7 +48,7 @@ table {
 }
 
 .top {
-    background-color: green;
+    background-color:#053B06;
     position: sticky;
     top: 0;
     left: 0;
@@ -57,8 +57,31 @@ table {
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
+	font-size: xx-large;
 }
 
 .title {
     text-align: center;
+}
+
+.text {
+	color:#f2e8cf;
+}
+
+.background {
+	background-color: black;
+}
+
+.headings{
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.subheadings {
+	font-family: "Space Grotest", sans-serif;
+	text-align: center;
+	font-size: small;
+}
+
+.bodies {
+	font-family: "Libre Baskerville", serif;
 }
