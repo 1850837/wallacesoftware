@@ -54,6 +54,16 @@ table {
 	background-size: 80px;
 }
 
+#darkmode {
+	position: absolute;
+	height: 6%;
+	padding: 5px;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 400px;
+	background-color: white;
+}
+
 .above {
 	display: flex;
 }

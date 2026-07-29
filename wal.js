@@ -47,8 +47,6 @@ dogBody.addEventListener("mouseleave", (event) => {
     current = "add";
 })
 
-// Return tail to normal
-
 // Bark
 
 // Text?
