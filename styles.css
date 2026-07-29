@@ -68,23 +68,20 @@ table {
 	z-index: 0;
 }
 
-.dogbody::after {
-	content: url(/Art/Crayons\ Wallace\ Tail\ 1.png);
+.dogtail {
 	height: 200px;
-	display: block;
-	transform: scale(.4);
-	position: relative;
-	top: -245px;
-	left: 180px;
+	position: absolute;
+	padding-left: calc(50% + 110px);
+	padding-top: calc(16% + 200px);
 	z-index: -1;
 }
 
 .dogbody::before {
 	content: url(/Art/Crayons\ Decor\ Lamp\ Day.png);
 	display: block;
-	transform: scale(.4);
+	transform: scale(.45);
 	position: absolute;
-	top: -22%;
+	top: -20%;
 	right: 50%;
 	z-index: -2;
 }
