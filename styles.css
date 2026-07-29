@@ -47,41 +47,39 @@ table {
 	border-spacing: 0;
 }
 
-.top {
-    background-color:#053B06;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 1%;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-	font-size: xx-large;
-}
-
-.title {
-    text-align: center;
-}
-
-.text {
-	color:#f2e8cf;
-}
-
 .background {
-	background-color: black;
+	background-image: url(/Art/CrayonsTileDay.png);
+	background-position: top;
+	background-repeat: repeat;
+	background-size: 80px;
 }
 
-.headings{
-	font-family: "Space Grotesk", sans-serif;
+.above {
+	display: flex;
 }
 
-.subheadings {
-	font-family: "Space Grotest", sans-serif;
-	text-align: center;
-	font-size: small;
+.Wallace {
+	margin: auto;
+	padding-top: 2%;
 }
 
-.bodies {
-	font-family: "Libre Baskerville", serif;
+.dogbody {
+	height: 400px;
+	z-index: 0;
+}
+
+.dogbody::after {
+	content: url(/Art/Crayons\ Wallace\ Tail\ 1.png);
+	height: 200px;
+	display: block;
+	transform: scale(.4);
+	position: relative;
+	top: -245px;
+	left: 180px;
+	z-index: -1;
+}
+
+.table {
+	background-image: url(/Art/table\ \(Edited\).png);
+	background-repeat: repeat;
 }
