@@ -60,7 +60,7 @@ table {
 
 .Wallace {
 	margin: auto;
-	padding-top: 2%;
+	padding-top: 16%;
 }
 
 .dogbody {
@@ -77,6 +77,32 @@ table {
 	top: -245px;
 	left: 180px;
 	z-index: -1;
+}
+
+.dogbody::before {
+	content: url(/Art/Crayons\ Decor\ Lamp\ Day.png);
+	display: block;
+	transform: scale(.4);
+	position: absolute;
+	top: -22%;
+	right: 50%;
+	z-index: -2;
+}
+
+.bookshelf {
+	height: 650px;
+	z-index: -3;
+	position: absolute;
+	left: 61%;
+	top: 6%;
+}
+
+.window {
+	height: 400px;
+	position: absolute;
+	top: 20%;
+	right: 78%;
+	z-index: -4;
 }
 
 .table {
