@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 6;
 }
 ol, ul {
 	list-style: none;
@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-.background {
+.above {
 	background-image: url(/Art/CrayonsTileDay.png);
 	background-position: top;
 	background-repeat: repeat;
@@ -62,7 +62,7 @@ table {
 	border-width: 0px;
 	border-radius: 400px;
 	background-color: white;
-	z-index: 2;
+	z-index: 5;
 }
 
 .above {
@@ -84,7 +84,7 @@ table {
 	position: absolute;
 	padding-left: calc(50% - 10px);
 	padding-top: calc(16% + 150px);
-	z-index: -1;
+	z-index: 4;
 }
 
 .lamp {
@@ -97,7 +97,7 @@ table {
 
 .bookshelf {
 	height: 650px;
-	z-index: -3;
+	z-index: 3;
 	position: absolute;
 	left: 61%;
 	top: 6%;
@@ -108,7 +108,7 @@ table {
 	position: absolute;
 	top: 20%;
 	right: 78%;
-	z-index: -4;
+	z-index: 2;
 }
 
 .table {
