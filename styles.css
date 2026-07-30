@@ -79,10 +79,10 @@ table {
 }
 
 .dogtail {
-	height: 200px;
+	height: 230px;
 	position: absolute;
-	padding-left: calc(50% + 110px);
-	padding-top: calc(16% + 200px);
+	padding-left: calc(50% - 10px);
+	padding-top: calc(16% + 170px);
 	z-index: -1;
 }
 

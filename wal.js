@@ -8,7 +8,7 @@ let current = "add"
 let tailInterval = null;
 
 function wagTail(){
-    let source = "/Art/Crayons Wallace Tail " + i + ".png";
+    let source = "/Art/Crayons Wallace Tail 2 " + i + ".png";
     tail.src = source;
 
     // ensuring current is up to date
@@ -42,7 +42,7 @@ dogBody.addEventListener("mouseleave", (event) => {
     tailInterval = null; // Reset variable
 
     // Reset tail to default image
-    tail.src = "/Art/Crayons Wallace Tail 1.png";
+    tail.src = "/Art/Crayons Wallace Tail 2 3.png";
     i = 2; // Reset frame counter for next hover
     current = "add";
 })
