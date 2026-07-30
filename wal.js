@@ -1,5 +1,39 @@
 // Dark mode
 
+let currentMode = "light";
+// document.getElementById("darkmode").onclick = function() {darkMode()};
+
+function darkModeFunc(){
+
+    console.log("here");
+    // access the relevant tokens
+    let wal = document.getElementsByClassName("dogbody")[1];
+    let wind = document.getElementsByClassName("window")[0];
+    let lamp = document.getElementsByClassName("lamp")[0];
+
+    if (currentMode === "light"){
+        currentMode = "dark";
+
+        wal.src = "/Art/Crayons Night Wallace Idle.png";
+        document.body.style.backgroundImage = "url('/Art/Crayons Tiles Night.png')";
+        wind.src = "/Art/Crayons Decor Window Night.png";
+        lamp.src = "/Art/Crayons Decor Lamp Night.png";
+    }
+    else if (currentMode === "dark"){
+        currentMode = "light";
+
+        wal.src = "/Art/Crayons Wallace Idle.png";
+        document.body.style.backgroundImage = "url('/Art/CrayonsTileDay.png')";
+        wind.src = "/Art/Crayons Decor Window Day.png";
+        lamp.src = "/Art/Crayons Decor Lamp Day.png";
+    }
+
+    // change Wallace
+    // change tiles
+    // change window
+    // change lamp
+}
+
 // Wag tail
 
 let tail = document.getElementById("dogtail");
