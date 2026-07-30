@@ -122,8 +122,8 @@ table {
 }
 
 .table {
-	background-image: url(/Art/table\ \(Edited\).png);
-	background-repeat: repeat;
-	position:relative;
+	background-image: url("/Art/table%20(Edited).png");
+    background-repeat: repeat;
+    position: relative;
 	z-index: 10;
 }
