@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import './styles.css'; // Assuming your styles.css contents were moved here
+import { useState, useEffect, useRef } from 'react';
+import './styles.css';
 
 export default function App() {
 
@@ -7,45 +7,32 @@ export default function App() {
     const [isHovering, setIsHovering] = useState(false);
     const [tailFrame, setTailFrame] = useState(2);
 
+    const directionRef = useRef("add");
+
     // Dark mode
     const toggleTheme = () => {
         setTheme(prevTheme => prevTheme === "light" ? "dark" : "light");
     };
 
-    useEffect(() => {
-        if (theme === "light") {
-            document.body.style.backgroundImage = "url('/Art/CrayonsTileDay.png')";
-        } else {
-            document.body.style.backgroundImage = "url('/Art/Crayons Tiles Night.png')";
-        }
-    }, [theme]);
-
     // Tail wagging
     useEffect(() => {
         let tailInterval = null;
-        
-        // This variable stays inside the effect to track direction without triggering extra re-renders
-        let currentDirection = "add"; 
 
         if (isHovering) {
+          console.log("here!");
             tailInterval = setInterval(() => {
                 setTailFrame(prevFrame => {
-                    let nextFrame = prevFrame;
-
                     // Figure out direction
-                    if (prevFrame <= 1) currentDirection = "add";
-                    if (prevFrame >= 5) currentDirection = "subtract";
+                    if (prevFrame <= 1) directionRef.current = "add";
+                    if (prevFrame >= 5) directionRef.current = "subtract";
 
-                    // Calculate next frame
-                    if (currentDirection === "add") nextFrame++;
-                    if (currentDirection === "subtract") nextFrame--;
-
-                    return nextFrame;
+                    return directionRef.current === "add" ? prevFrame + 1 : prevFrame -1;
                 });
             }, 150);
         } else {
             // Reset to default when mouse leaves
             setTailFrame(3); 
+            directionRef.current = "add";
         }
 
         // Cleanup function: React runs this to clear the interval when the component unmounts or isHovering changes
@@ -55,11 +42,24 @@ export default function App() {
     // HTML/JSX
     return (
         <>
+          <div
+            className="background" 
+              style={{ 
+                  backgroundImage: theme === "light" 
+                    ? "url('/Art/CrayonsTileDay.png')" 
+                    : "url('/Art/Crayons Tiles Night.png')",
+                minHeight: "100vh",
+                
+                backgroundSize: "80px",
+                backgroundRepeat: "repeat",
+                backgroundPosition: "top"
+              }}
+            >
             <img 
                 src="/Art/night-mode.png" 
                 alt="Lineart of a crescent moon with a star" 
                 id="darkmode" 
-                onClick={toggleTheme} 
+                onClick={toggleTheme}
             />
 
             <div className="above">
@@ -142,6 +142,7 @@ export default function App() {
                 More!!!
                 <br /><br /><br /><br />
                 More!!!
+              </div>
             </div>
         </>
     );
