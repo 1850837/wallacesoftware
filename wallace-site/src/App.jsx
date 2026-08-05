@@ -105,6 +105,32 @@ export default function App() {
             </div>
 
             <div className="table">
+
+                <div class="items">
+                    <div class="subheader">
+                        Blood on the Clocktower Quantum Software
+                    </div>
+                    I'm making software to make storytelling Quantum Blood on the Clocktower easier!
+                </div>
+
+                <div class="items">
+                    Knitting and Crochet Neural Network
+                </div>
+
+                <div class="items">
+                    South Australian Data Analytics
+                </div>
+
+                <div class="items">
+                    About Me
+                </div>
+
+                <div class="items lastitem">
+                    About Me Real
+                </div>
+
+                {/* Text here! <br></br>
+
                 Loads more text!
                 <br /><br /><br /><br />
                 More!!!
@@ -141,7 +167,7 @@ export default function App() {
                 <br /><br /><br /><br />
                 More!!!
                 <br /><br /><br /><br />
-                More!!!
+                More!!! */}
               </div>
             </div>
         </>
