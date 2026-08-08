@@ -1,0 +1,23 @@
+Bugs/glitches:
+- can scroll to the side on mobile
+- white bar at bottom of page
+- readjust where everything sits
+
+Next to implement:
+- make dark mode actually dark
+    - colour everything with a dark purple layer
+    - have every item change (including table & bookshelf)
+- new dark mode icon
+- dark mode icon changes with dark mode
+- have bark happen
+- text boxes
+- actual list of items on table
+- fix the colour of About Me on mobile
+- fix black underneath on mobile
+
+- hovering over buttons changes colour
+- hovering over buttons changes mouse?
+- buttons are accessible via keyboard
+
+- setup KoFi
+- setup email list
