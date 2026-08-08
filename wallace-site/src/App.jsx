@@ -106,69 +106,54 @@ export default function App() {
 
             <div className="table">
 
+                <br></br>
+
+                <div class="corners topleft"></div>
+                <div class="corners topright"></div>
+                <div class="corners bottomleft"></div>
+                <div class="corners bottomright"></div>
+
                 <div class="items">
                     <div class="subheader">
-                        Blood on the Clocktower Quantum Software
+                        <div class="option selected notlast">
+                            BotC Quantum Tool
+                        </div>
+                        <div class="option notlast">
+                            Knitting NN Tool
+                        </div>
+                        <div class="option notlast">
+                            South Australian Data Analytics
+                        </div>
+                        <div class="option notlast">
+                            About Wallace
+                        </div>
+                        <div class="option">
+                            About Me
+                        </div>
                     </div>
-                    I'm making software to make storytelling Quantum Blood on the Clocktower easier!
+
+                    <div class="Detail">
+                        Blood on the Clocktower, or BotC, is a social-deduction board game where death is not the end. It requires a player to run the game 
+                        for the remaining players, which can be quite a tough job, especially for more complex modes.
+                        <br></br><br></br>
+                        Usually, every player is given a character that determines what team they're on and what abilities they have. There is a way to play, 
+                        however, where the players are only given their team (or alignment, it's called), and their characters are determined as they play.
+                        If a player does an action, they are then only able to be characters of their alignment who could do that action.
+                        <br></br><br></br>
+                        The person who runs the game, known as the storyteller, needs to keep track of every action of every player, and therefore every possible
+                         character for every player. This is an enormous job, and as such, this way of playing is rarely ran. I am someone who has loved the little
+                         bit I have played, and thus want to make it more accessible to run.
+                        <br></br><br></br>
+                        This way of playing is called Quantum, or Quantum Clocktower. Soon, my storytelling tool for Quantum will be here. Watch this space! I will 
+                        also sort out an email form for folks who want updates or otherwise want to get in touch with me about this.
+                    </div>
                 </div>
 
-                <div class="items">
-                    Knitting and Crochet Neural Network
-                </div>
+              <br></br>
 
-                <div class="items">
-                    South Australian Data Analytics
-                </div>
-
-                <div class="items">
-                    About Me
-                </div>
-
-                <div class="items lastitem">
-                    About Me Real
-                </div>
-
-                {/* Text here! <br></br>
-
-                Loads more text!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!!
-                <br /><br /><br /><br />
-                More!!! */}
               </div>
+
+              
             </div>
         </>
     );
