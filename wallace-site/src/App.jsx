@@ -107,29 +107,6 @@ export default function App() {
         return () => clearInterval(tailInterval);
     }, [isHovering]);
 
-    // Changing what page looking at
-    useEffect(() => {
-        if (selection === "BotC"){
-            console.log("BotC");
-        }
-        else if (selection === "Knit"){
-            console.log("Knit");
-        }
-        else if (selection === "SAData"){
-            console.log("SAData");
-        }
-        else if (selection === "Wallace"){
-            console.log("Wallace");
-        }
-        else if (selection === "AboutMe"){
-            console.log("About Me");
-        }
-
-        return () => {
-        }
-
-    }, [selection]);
-
     // HTML/JSX
     return (
         <>
